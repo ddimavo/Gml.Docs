@@ -20,7 +20,7 @@
 После установки у вас будет папка Gml.Launcher, откройте в ней `Gml.Launcher.sln` в
 одном [из загруженных IDE](Installation.md)
 
-### Настройка проекта
+## Настройка проекта
 
 1. Откройте файл `src/Gml.Launcher/Assets/Resources/ResourceKeysDictionary.Template.cs`
 2. Отредактируйте файл
@@ -42,12 +42,12 @@ public static class ResourceKeysDictionary
 
 <tabs>
     <tab title="Visual studio">
-        <img src="publish-visual-studio-1.png" alt="Установка Visual Studio 1">
-        <img src="publish-visual-studio-2.png" alt="Установка Visual Studio 2">
-        <img src="publish-visual-studio-3.png" alt="Установка Visual Studio 3">
+        <img src="publish-visual-studio-1.png" alt="Установка Visual Studio 1" />
+        <img src="publish-visual-studio-2.png" alt="Установка Visual Studio 2" />
+        <img src="publish-visual-studio-3.png" alt="Установка Visual Studio 3" />
     </tab>
     <tab title="JetBrains Rider">
-        <img src="publish-rider-1.png" alt="Установка Rider 1">
-        <img src="publish-rider-2.png" alt="Установка Rider 2">
+        <img src="publish-rider-1.png" alt="Установка Rider 1" />
+        <img src="publish-rider-2.png" alt="Установка Rider 2" />
     </tab>
 </tabs>
