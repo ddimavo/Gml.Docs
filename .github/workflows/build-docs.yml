@@ -2,8 +2,12 @@ name: Build documentation
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
+
+permissions:
+  id-token: write
+  pages: write
 
 env:
   INSTANCE: 'Writerside/rw'
