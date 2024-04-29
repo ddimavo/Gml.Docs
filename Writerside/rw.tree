@@ -25,4 +25,8 @@
             <toc-element topic="allowed-minecraft-versions.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="Gml-Launcher.md">
+        <toc-element topic="Installation.md"/>
+        <toc-element topic="installation-launcher.md"/>
+    </toc-element>
 </instance-profile>
