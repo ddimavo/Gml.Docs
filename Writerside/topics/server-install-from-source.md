@@ -12,9 +12,19 @@
 
 Выполните следующую команду в вашем терминале:
 
-```bash
-git clone --recursive https://github.com/GamerVII-NET/Gml.Backend.git
-```
+<tabs>
+    <tab title="Стабильная версия">
+      <code-block lang="bash">
+        git clone --recursive https://github.com/GamerVII-NET/Gml.Backend.git
+      </code-block>
+    </tab>
+    <tab title="Последняя актуальная">
+      <code-block lang="bash">
+            git clone --recursive \
+                      --branch dev https://github.com/GamerVII-NET/Gml.Backend.git
+      </code-block>
+    </tab>
+</tabs>
 
 #### Шаг 2: Переход в директорию проекта
 
