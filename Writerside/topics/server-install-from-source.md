@@ -13,16 +13,6 @@
 Выполните следующую команду в вашем терминале:
 
 <tabs>
-
-[//]: # (    <tab title="Стабильная версия">)
-
-[//]: # (      <code-block lang="bash">)
-
-[//]: # (        git clone --recursive https://github.com/GamerVII-NET/Gml.Backend.git)
-
-[//]: # (      </code-block>)
-
-[//]: # (    </tab>)
     <tab title="Последняя актуальная">
       <code-block lang="bash">
             git clone --recursive \
