@@ -13,6 +13,11 @@
 Выполните следующую команду в вашем терминале:
 
 <tabs>
+    <tab title="Стабильная версия">
+      <code-block lang="bash">
+        git clone --recursive https://github.com/GamerVII-NET/Gml.Backend.git
+      </code-block>
+    </tab>
     <tab title="Последняя актуальная">
       <code-block lang="bash">
             git clone --recursive \
@@ -164,6 +169,14 @@ docker compose up
             <a href="http://localhost:5005">http://localhost:5005</a>
             <br/>
             <code>логин и пароль по умолчанию: admin:admin</code>
+        </p>
+    </step>
+    <step>
+        <p>
+            <span>Sentry (Журнал ошибок)</span>
+            <a href="http://localhost:5007/register">http://localhost:5007</a>
+            <br/>
+            <code>Необходимо пройти предварительную регистрацию</code>
         </p>
     </step>
 </procedure>

@@ -1,10 +1,15 @@
-# Сборка лаунчера
+# Сборка из иcходников GitHub
 
 ### Загрузка лаунчера
 
 Выполните папку в удобной для вас директории
 
 <tabs>
+    <tab title="Стабильная версия">
+      <code-block lang="bash">
+        git clone --recursive https://github.com/GamerVII-NET/Gml.Launcher.git
+      </code-block>
+    </tab>
     <tab title="Последняя актуальная">
       <code-block lang="bash">
             git clone --recursive --branch dev https://github.com/GamerVII-NET/Gml.Launcher.git
@@ -17,7 +22,7 @@
 
 ## Настройка проекта
 
-1. Откройте файл `src/Gml.Launcher/Assets/Resources/ResourceKeysDictionary.Template.cs`
+1. Откройте файл `src/Gml.Launcher/Assets/Resources/ResourceKeysDictionary.cs`
 2. Отредактируйте файл
 
 ```C#
