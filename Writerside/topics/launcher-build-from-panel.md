@@ -7,3 +7,5 @@
 2) Зайти на вкладку "Интеграции", или "Список интеграций" ![launcher-build-from-panel-1.png](launcher-build-from-panel-1.png)
 3) Заполнить необходимые поля![launcher-build-from-panel.png](launcher-build-from-panel.png)
 4) По окончанию сборки - исходники лаунчера будут сохранены на [ваш файловый сервер](server-install-from-source.md) по следующему пути:![launcher-build-from-panel-3.png](launcher-build-from-panel-3.png)
+5) После того как скачаете архив и распакуете в удобном для Вас месте, необходимо запустить bat / sh скрипт ![launcher-build-from-panel-2.png](launcher-build-from-panel-2.png)
+6) Запустите Gml.Launcher.sln в своей IDE

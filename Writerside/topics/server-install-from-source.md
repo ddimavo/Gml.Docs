@@ -38,12 +38,21 @@ cd Gml.Backend
 
 Отредактируйте или создайте файл `.env` в корне папки `Gml.Backend`
 
-```
+```yaml
+# Пример уже настроенного .env
+
 # API Endpoint для запросов
 # Необходимо заменить на свой адрес и порт,
 # на котором расположело API
-# порт указывается в переменной PORT_GML_BACKEND
-API_URL=http://localhost:5000                              
+# порт должен совпадать с переменной PORT_GML_BACKEND
+API_URL=http://localhost:5000
+
+MINIO_ROOT_USER=minioadmin # root пользователь панели управления
+MINIO_ROOT_PASSWORD=minioadmin # root пароль панели управления
+MINIO_ADDRESS=:9000 # адрес панели (:9000 или 10.2.0.1:9000)
+MINIO_ADDRESS_PORT=9000 # Порт панели, должен совпадать с записью выше
+MINIO_CONSOLE_ADDRESS=:9001 # адрес консоли (:9001 или 10.2.0.1:9001)
+MINIO_CONSOLE_ADDRESS_PORT=9001 # Порт консоли, должен совпадать с записью выше                       
 
 # База данных Для GLITCHTIP (создаётся автоматически)
 POSTGRES_USER=admin # Пользователь базы данных
@@ -68,7 +77,7 @@ PORT_GML_SENTRY=5007    # Панель управления ошибками
 
 Отредактируйте или создайте файл `.env` в папке `src\Gml.Web.Client\.env`
 
-```
+```yaml
 NEXT_PUBLIC_BASE_URL=http://localhost:5000 # Адрес к Web Api
 NEXT_PUBLIC_PREFIX_API=api
 NEXT_PUBLIC_VERSION_API=v1
