@@ -41,13 +41,7 @@ cd Gml.Backend
 ```yaml
 # Пример уже настроенного .env
 
-# API Endpoint для запросов
-# Необходимо заменить на свой адрес и порт,
-# на котором расположело API
-# порт должен совпадать с переменной PORT_GML_BACKEND
-API_URL=http://localhost:5000
-
-# UID (User Identifier) и GID (Group Identifier) используется 
+# UID (User Identifier) и GID (Group Identifier) используется
 # для указания id пользователя и группы в Linux.
 UID=0
 GID=0
@@ -56,7 +50,6 @@ S3_ENABLED=true # Вклуючить подключение к S3
 
 MINIO_ROOT_USER=minioadmin # root пользователь панели управления
 MINIO_ROOT_PASSWORD=minioadmin # root пароль панели управления
-                 
 
 # Настройки внешнего доступа 
 # Порты, на которых будут работать приложения
