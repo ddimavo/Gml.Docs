@@ -56,17 +56,17 @@ S3_ENABLED=true # Вклуючить подключение к S3
 
 MINIO_ROOT_USER=minioadmin # root пользователь панели управления
 MINIO_ROOT_PASSWORD=minioadmin # root пароль панели управления
-MINIO_ADDRESS=:9000 # адрес панели (:9000 или 10.2.0.1:9000)
-MINIO_ADDRESS_PORT=9000 # Порт панели, должен совпадать с записью выше
-MINIO_CONSOLE_ADDRESS=:9001 # адрес консоли (:9001 или 10.2.0.1:9001)
-MINIO_CONSOLE_ADDRESS_PORT=9001 # Порт (совпадает с записью выше)                       
+                 
 
 # Настройки внешнего доступа 
 # Порты, на которых будут работать приложения
+MINIO_ADDRESS=:5009 # адрес консоли (:5009 или 10.2.0.1:5009)
+MINIO_ADDRESS_PORT=5009 # Порт консоли (совпадает с записью выше)
+MINIO_CONSOLE_ADDRESS=:5010 # адрес панели (:5010 или 10.2.0.1:5010)
+MINIO_CONSOLE_ADDRESS_PORT=5010 # Порт (совпадает с записью выше)
 PORT_GML_BACKEND=5000         # Web Api
 PORT_GML_FRONTEND=5003        # Панель управления проектом
 PORT_GML_FILES=5005           # Файловый сервис
-PORT_GML_SENTRY=5007          # Панель управления ошибками
 PORT_GML_SKINS=5006           # Сервис скинов 
 ```
 
@@ -177,10 +177,10 @@ docker compose up
     </step>
     <step>
         <p>
-            <span>Sentry (Журнал ошибок)</span>
-            <a href="http://localhost:5007/register">http://localhost:5007</a>
+            <span>Minio S3 (Распределенный файловый сервер)</span>
+            <a href="http://localhost:5010/">http://localhost:5010</a>
             <br/>
-            <code>Необходимо пройти предварительную регистрацию</code>
+            <code>логин и пароль по умолчанию: minioadmin:minioadmin </code>
         </p>
     </step>
 </procedure>
