@@ -49,11 +49,6 @@ fetch("http://local:5000/api/v1/integrations/auth/signin", requestOptions)
 .catch((error) => console.error(error));
         </code-block>
     </tab>
-    <tab title="JavaScript">
-        <code-block lang="javascript">
-
-        </code-block>
-    </tab>
 
 </tabs>
 
