@@ -21,7 +21,8 @@
 <tabs>
     <tab title="cURL">
         <code-block lang="curl">
-curl --location 'http://localhost:5000/api/v1/integrations/auth/signin' \
+curl 
+--location 'http://localhost:5000/api/v1/integrations/auth/signin' \
 --header 'Content-Type: application/json' \
 --data '{
     "Login": "ЛОГИН",
