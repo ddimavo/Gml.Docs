@@ -1,3 +1,5 @@
 # Интеграции
 
-Start typing here...
+[Игровые профили](profiles.md)
+
+[Авторизация](integrations-auth.md)

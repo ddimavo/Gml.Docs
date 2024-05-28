@@ -1,3 +1,3 @@
 # Авторизация
 
-Start typing here...
+[Собственная авторизация](integrations-auth-custom.md)
