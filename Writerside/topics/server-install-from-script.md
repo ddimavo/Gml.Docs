@@ -13,7 +13,7 @@
 Выполните следующую команду в вашем терминале:
 
 ```bash
-curl -O  https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend.Installer/master/gml-installer-rus.sh
+curl -O https://raw.githubusercontent.com/GamerVII-NET/Gml.Backend.Installer/master/gml-installer-rus.sh
 ```
 
 #### Шаг 2: Выдаём права на запуск файла

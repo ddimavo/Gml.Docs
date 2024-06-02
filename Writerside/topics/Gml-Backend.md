@@ -2,7 +2,7 @@
 
 Приветствуем вас в документации по продукту Gml (GamerVII Minecraft Launcher)
 
-• [Добро пожаловать](home.md)
+• [Начало работы](home.md)
 
 • [Дополнительная информация](additional-info.md)
 
