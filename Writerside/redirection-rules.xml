@@ -11,4 +11,24 @@
             <![CDATA[Created after removal of "<Добавление-файлов-в-профиль.md>" from Help Instance]]></description>
         <accepts>Добавление-файлов-в-профиль.html</accepts>
     </rule>
+    <rule id="44be201c">
+        <description>Created after removal of "Gml.Backend" from Recloud Wiki</description>
+        <accepts>Gml-Backend.html</accepts>
+    </rule>
+    <rule id="2791e3a3">
+        <description>Created after removal of "Gml.Backend" from Recloud Wiki</description>
+        <accepts>Empty-XML-Topic.html</accepts>
+    </rule>
+    <rule id="1d92c900">
+        <description>Created after removal of "Установка" from Recloud Wiki</description>
+        <accepts>server-install-info.html</accepts>
+    </rule>
+    <rule id="5114ce91">
+        <description>Created after removal of "Home" from Recloud Wiki</description>
+        <accepts>Home.html</accepts>
+    </rule>
+    <rule id="24faf0a2">
+        <description>Created after removal of "Серверная часть" from Recloud Wiki</description>
+        <accepts>server-install.html</accepts>
+    </rule>
 </rules>

@@ -3,18 +3,17 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="rw" name="Recloud Wiki"
-                  start-page="Gml-Backend.md">
+                  start-page="Home.topic">
 
-    <toc-element topic="Gml-Backend.md">
-        <toc-element topic="home.md">
+    <toc-element topic="Home.topic"/>
+    <toc-element topic="Gml-Backend.topic">
+        <toc-element topic="getting-started.md">
             <toc-element topic="requirements.md"/>
         </toc-element>
-        <toc-element topic="server-install.md">
-            <toc-element topic="server-install-info.md">
-                <toc-element topic="server-install-from-source.md"/>
-                <toc-element topic="server-install-from-script.md"/>
-                <toc-element topic="server-install-from-script-windows.md"/>
-            </toc-element>
+        <toc-element topic="server-install-home.topic">
+            <toc-element topic="server-install-from-script.md"/>
+            <toc-element topic="server-install-from-script-windows.md"/>
+            <toc-element topic="server-install-from-source.md"/>
         </toc-element>
         <toc-element topic="additional-info.md">
             <toc-element topic="allowed-minecraft-versions.md"/>

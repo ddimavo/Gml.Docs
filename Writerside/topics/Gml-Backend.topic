@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Серверная часть" id="Gml-Backend">
+
+    <section-starting-page>
+        <description>Этот раздел поможет вам развернуть серверную инфраструктуру Gml.</description>
+
+        <spotlight>
+            <a href="server-install-home.topic" description="Gml.Backend" type="start"/>
+            <a href="requirements.md" description="System Requirement" type="documents"/>
+        </spotlight>
+
+        <primary>
+            <title>Разделы</title>
+            <a href="getting-started.md" description="Project description">Описание проекта</a>
+            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+        </primary>
+
+        <secondary>
+            <title>Интеграции</title>
+            <a href="profiles.md" description="Game profiles">Игровые профили</a>
+            <a href="integrations-auth.md" description="Auth">Авторизация</a>
+        </secondary>
+
+    </section-starting-page>
+
+</topic>

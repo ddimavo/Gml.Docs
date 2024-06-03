@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Установка" id="server-install-home">
+
+    <section-starting-page>
+        <title>Gml.Backend</title>
+        <description>Установка на различные ОС</description>
+
+        <primary>
+            <title>Поддерживаемые платформы</title>
+            <a href="server-install-from-script.md" description="Debian/Ubuntu installer">Debian/Ubuntu</a>
+            <a href="server-install-from-script-windows.md" description="Windows installer">Windows</a>
+            <a href="server-install-from-source.md" description="Install from source code">Установка из исходников</a>
+        </primary>
+
+    </section-starting-page>
+</topic>
