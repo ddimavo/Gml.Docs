@@ -9,12 +9,21 @@
         <title>Gml.Backend</title>
         <description>Установка на различные ОС</description>
 
+        <spotlight>
+            <a href="server-install-from-script.md" description="Debian/Ubuntu installer" type="server"/>
+            <a href="server-install-from-script-windows.md" description="Windows installer" type="server"/>
+        </spotlight>
+
         <primary>
-            <title>Поддерживаемые платформы</title>
-            <a href="server-install-from-script.md" description="Debian/Ubuntu installer">Debian/Ubuntu</a>
-            <a href="server-install-from-script-windows.md" description="Windows installer">Windows</a>
+            <title>Прочие варианты установки</title>
             <a href="server-install-from-source.md" description="Install from source code">Установка из исходников</a>
         </primary>
+
+        <secondary>
+            <title>Дополнительная информация</title>
+            <a href="getting-started.md" description="Project description">Описание проекта</a>
+            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+        </secondary>
 
     </section-starting-page>
 </topic>

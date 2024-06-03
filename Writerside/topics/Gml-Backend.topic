@@ -6,6 +6,7 @@
        title="Серверная часть" id="Gml-Backend">
 
     <section-starting-page>
+        <title>Серверная часть</title>
         <description>Этот раздел поможет вам развернуть серверную инфраструктуру Gml.</description>
 
         <spotlight>

@@ -14,5 +14,17 @@
             <a href="Gml-Launcher.md" description="Gml.Launcher" type="computer"/>
         </spotlight>
 
+        <primary>
+            <title>Разделы</title>
+            <a href="getting-started.md" description="Project description">Описание проекта</a>
+            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+        </primary>
+
+        <secondary>
+            <title>Дополнительная информация</title>
+            <a href="profiles.md" description="Game profiles">Игровые профили</a>
+            <a href="integrations-auth.md" description="Auth">Авторизация</a>
+        </secondary>
+
     </section-starting-page>
 </topic>

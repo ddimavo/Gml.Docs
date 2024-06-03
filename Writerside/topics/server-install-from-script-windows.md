@@ -27,7 +27,10 @@
 Создайте папку в удобном для вас месте, переместите туда скачайнный bat файл и запустите.
 
 При первоначальной настройке он попросит ввести данные:
-![windows-installer.png](windows-installer.png)
+
+<p>
+<img src="windows-installer.png" alt="Windows installer"/>
+</p>
 
 
 
