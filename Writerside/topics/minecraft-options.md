@@ -1,0 +1,13 @@
+# Опции запуска
+
+В игровом профиле есть возможность указать свои собственные JVM аргументы, а так же прочие предустановленные в библиотеках и клиенте
+
+## JVM Аргументы Authlib Injector
+
+| JVM Аргумент                         | Описание                                                                                                          | Доступные значения                                                                                                                                              |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -Dauthlibinjector.mojangNamespace    | Следует ли включать пространство имен Mojang (суффикс @mojang).                                                   | default, enabled, disabled                                                                                                                                      |
+| -Dauthlibinjector.legacySkinPolyfill | Использование устаревший API системы скинов, а именно:<br/> ```GET``` ```/skins/MinecraftSkins/{username}.png```. | default, enabled, disabled                                                                                                                                      |
+| -Dauthlibinjector.debug              | Включение Debug режима Authlib Injector                                                                           | verbose(Подробный журнал)<br/>authlib (Журнал Mojang authlib)<br/>dumpClass (Вывод данных измененных классов)<br/>printUntransformed (Вывод неизменных классов) |
+| -Dauthlibinjector.disableHttpd       | Отключение Mojang namespace и поддержки старых API для получения текстур                                          |                                                                                                                                                                 |
+| -Dauthlibinjector.noShowServerName   | Отключение отображения имени сервера аутентификации на экране меню Minecraft.                                     | default, enabled, disabled                                                                                                                                      |

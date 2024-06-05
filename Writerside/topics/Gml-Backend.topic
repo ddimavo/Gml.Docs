@@ -24,6 +24,7 @@
             <title>Интеграции</title>
             <a href="profiles.md" description="Game profiles">Игровые профили</a>
             <a href="integrations-auth.md" description="Auth">Авторизация</a>
+            <a href="minecraft-options.md" description="Auth">Опции запуска</a>
         </secondary>
 
     </section-starting-page>
