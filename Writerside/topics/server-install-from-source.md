@@ -1,3 +1,5 @@
+Вот обновленная версия вашей документации:
+
 # Установщик из исходников GitHub
 
 Инструкции по установке и настройке серверной части проекта для прочих операционных систем, не имеющих установщика
@@ -46,10 +48,16 @@ cd Gml.Backend
 UID=0
 GID=0
 
-S3_ENABLED=true # Вклуючить подключение к S3
+SECURITY_KEY= # Секретный ключ (openssl rand -hex 32)
+PROJECT_NAME= # Наименование вашего проекта
+PROJECT_DESCRIPTION= # Описание проекта (Опционально)
+PROJECT_POLICYNAME= # Наименование политики, пример: (GamerVIILauncherPolicy)
+PROJECT_PATH= # Оставить пустым, если нет необходимости менять путь установки профилей на сервере
 
-MINIO_ROOT_USER=minioadmin # root пользователь панели управления
-MINIO_ROOT_PASSWORD=minioadmin # root пароль панели управления
+S3_ENABLED=true # Включить подключение к S3
+
+MINIO_ROOT_USER= # root пользователь панели управления
+MINIO_ROOT_PASSWORD= # root пароль панели управления
 
 # Настройки внешнего доступа 
 # Порты, на которых будут работать приложения
@@ -71,65 +79,6 @@ NEXT_PUBLIC_PREFIX_API=api
 NEXT_PUBLIC_VERSION_API=v1
 ```
 
-#### Шаг 4: Настройка appsettings.json (Опционально)
-
-Отредактируйте или создайте файл `appsettings.json` в папке `src\Gml.Web.Api\src\Gml.Web.Api`
-
-<tabs>
-    <tab title="Пример">
-      <code-block lang="json">
-        {
-          "Logging": {
-            "LogLevel": {
-              "Default": "Information",
-              "Microsoft.AspNetCore": "Warning"
-            }
-          },
-          "ServerSettings": {
-            "ProjectName": "GmlServer1", # Название проекта
-            "ProjectDescription": "Project Description", # Описание проекта
-            "ProjectPath": "", # Заполнить, если нужно переименовать папку
-            "ProjectVersion": "1.0.0-alpha", # Версия приложения (Authlib)
-            "SecretKey": "SecretKey", # Секретный ключ (openssl rand -hex 32)
-            "SkinDomains": [ # Домены и поддомены, откуда берутся скины
-                "localhost",
-                "recloud.tech",
-                ".recloud.tech"
-            ],
-            "PolicyName": "GmlPolicy" # Наименование CORS политики
-          },
-          "ConnectionStrings": {
-            "SQLite": "Data Source=data.db" # Путь к локальной базе данных
-          }
-        }
-        </code-block>
-    </tab>
-    <tab title="Чистый файл">
-        <code-block lang="json">
-        {
-          "Logging": {
-            "LogLevel": {
-              "Default": "Information",
-              "Microsoft.AspNetCore": "Warning"
-            }
-          },
-          "ServerSettings": {
-            "ProjectName": "",
-            "ProjectPath": "",
-            "ProjectVersion": "",
-            "SkinDomains": [],
-            "ProjectDescription": "",
-            "SecretKey": "",
-            "PolicyName": ""
-          },
-          "ConnectionStrings": {
-            "SQLite": ""
-          }
-        }
-        </code-block>
-    </tab>
-</tabs>
-
 #### Шаг 5: Запуск проекта с использованием Docker
 
 Выполните следующую команду в вашем терминале:
@@ -139,6 +88,7 @@ docker compose up -d
 ```
 
 Пожалуйста, убедитесь, что Docker установлен и работает на вашем компьютере для выполнения этой команды.
+
 
 После выполнения команды Docker загрузит необходимые образы и запустит проект.
 После запуска проекта, вы сможете открыть его в браузере, используя следующие адреса:
@@ -178,4 +128,4 @@ docker compose up -d
     </step>
 </procedure>
 
-
+Кроме того, я заметил, что ваш `.env` файл изменился. Если требуется, пожалуйста, внесите соответствующие изменения в документацию.
