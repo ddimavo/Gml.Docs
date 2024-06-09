@@ -49,6 +49,5 @@ public static class ResourceKeysDictionary
     <tab title="JetBrains Rider">
         <img src="publish-rider-1.png" alt="Установка Rider 1" />
         <img src="publish-rider-2.png" alt="Установка Rider 2" />
-
     </tab>
 </tabs>
