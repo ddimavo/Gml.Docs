@@ -2,7 +2,11 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <algolia-id>${{ secrets.ALGOLIA_APP_NAME }}</algolia-id>
+        <algolia-index>${{ secrets.ALGOLIA_INDEX_NAME }}</algolia-index>
+        <algolia-api-key>${{ secrets.ALGOLIA_KEY }}</algolia-api-key>
+    </variables>
     <build-profile instance="rw">
         <variables>
             <noindex-content>false</noindex-content>
