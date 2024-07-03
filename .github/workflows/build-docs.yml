@@ -13,6 +13,12 @@ env:
   INSTANCE: 'Writerside/rw'
   ARTIFACT: 'webHelpRW2-all.zip'
   DOCKER_VERSION: '241.15989'
+  ALGOLIA_ARTIFACT: 'webHelpRW2-all.zip'
+  ALGOLIA_APP_NAME: 'S1V9Y61PCC'
+  ALGOLIA_INDEX_NAME: 'prod_WIKI'
+  ALGOLIA_KEY: '${{ secrets.ALGOLIA_KEY }}'
+  CONFIG_JSON_PRODUCT: 'GmlDocs'
+  CONFIG_JSON_VERSION: '1.0'
 
 jobs:
   build:
@@ -77,7 +83,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   publish-indexes:
-    needs: [ build, test, deploy ]
+    needs: [build, test, deploy]
     runs-on: ubuntu-latest
     container:
       image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-3
@@ -88,11 +94,11 @@ jobs:
           name: docs
       - name: Unzip artifact
         run: |
-          unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d algolia-indexes
-          env algolia-key='${{secrets.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
+          unzip -O UTF-8 -qq '${{ env.ALGOLIA_ARTIFACT }}' -d algolia-indexes
+          env algolia-key='${{env.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
           update-index \
-          --application-name '${{secrets.ALGOLIA_APP_NAME}}' \
-          --index-name '${{secrets.ALGOLIA_INDEX_NAME}}' \
+          --application-name '${{env.ALGOLIA_APP_NAME}}' \
+          --index-name '${{env.ALGOLIA_INDEX_NAME}}' \
           --product '${{env.CONFIG_JSON_PRODUCT}}' \
           --version '${{env.CONFIG_JSON_VERSION}}' \
           --index-directory algolia-indexes/ \
