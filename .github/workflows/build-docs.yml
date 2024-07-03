@@ -88,7 +88,7 @@ jobs:
           name: docs
       - name: Unzip artifact
         run: |
-          unzip -O UTF-8 -qq '${{ secrets.ALGOLIA_ARTIFACT }}' -d algolia-indexes
+          unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d algolia-indexes
           env algolia-key='${{secrets.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
           update-index \
           --application-name '${{secrets.ALGOLIA_APP_NAME}}' \
