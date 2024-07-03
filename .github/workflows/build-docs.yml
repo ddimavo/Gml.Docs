@@ -88,11 +88,11 @@ jobs:
           name: docs
       - name: Unzip artifact
         run: |
-          unzip -O UTF-8 -qq '${{ env.ALGOLIA_ARTIFACT }}' -d algolia-indexes
-          env algolia-key='${{env.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
+          unzip -O UTF-8 -qq '${{ secrets.ALGOLIA_ARTIFACT }}' -d algolia-indexes
+          env algolia-key='${{secrets.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
           update-index \
-          --application-name '${{env.ALGOLIA_APP_NAME}}' \
-          --index-name '${{env.ALGOLIA_INDEX_NAME}}' \
+          --application-name '${{secrets.ALGOLIA_APP_NAME}}' \
+          --index-name '${{secrets.ALGOLIA_INDEX_NAME}}' \
           --product '${{env.CONFIG_JSON_PRODUCT}}' \
           --version '${{env.CONFIG_JSON_VERSION}}' \
           --index-directory algolia-indexes/ \
