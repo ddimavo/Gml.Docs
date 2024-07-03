@@ -3,9 +3,9 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
-        <algolia-id>${{ secrets.ALGOLIA_APP_NAME }}</algolia-id>
-        <algolia-index>${{ secrets.ALGOLIA_INDEX_NAME }}</algolia-index>
-        <algolia-api-key>${{ secrets.ALGOLIA_KEY }}</algolia-api-key>
+        <algolia-id>S1V9Y61PCC</algolia-id>
+        <algolia-index>prod_WIKI</algolia-index>
+        <algolia-api-key>1914446cdea4f6cb0437e01d8bee6dd3</algolia-api-key>
     </variables>
     <build-profile instance="rw">
         <variables>
