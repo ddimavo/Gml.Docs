@@ -49,7 +49,7 @@ MyProgram.app
 
 Пример протокола:
 
-```xml
+```
   <key>CFBundleURLTypes</key>
   <array>
     <dict>
@@ -67,7 +67,7 @@ MyProgram.app
 
 Пример ассоциации файлов
 
-```xml
+```
   <key>CFBundleDocumentTypes</key>
   <array>
       <dict>
@@ -191,7 +191,7 @@ Here's the translated version of the detailed tutorial on creating and packaging
 
 Создание `Info.plist` файла, добавление или изменение ключей по необходимости:
 
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -264,7 +264,7 @@ cp -a "$PUBLISH_OUTPUT_DIRECTORY" "$APP_NAME/Contents/MacOS"
 
 Для начала включите усиленный режим с [исключениями](https://developer.apple.com/documentation/security/hardened_runtime?language=objc), создав файл `MyAppEntitlements.entitlements`:
 
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
