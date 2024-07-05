@@ -31,4 +31,8 @@
         <description>Created after removal of "Серверная часть" from Recloud Wiki</description>
         <accepts>server-install.html</accepts>
     </rule>
+    <rule id="4e70d7c8">
+        <description>Created after removal of "Сборка из панели" from Recloud Wiki</description>
+        <accepts>launcher-build-from-panel.html</accepts>
+    </rule>
 </rules>

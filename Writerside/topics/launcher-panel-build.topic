@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Сборка из панели" id="launcher-panel-build">
+
+    <section-starting-page>
+        <title>Сборка лаунчера из панели</title>
+        <description>Этот раздел поможет вам собрать лаунчер Gml.Launcher в самой панели</description>
+
+        <spotlight>
+            <a href="launcher-panel-build-download.md" description="Launcher download" type="documents"/>
+            <a href="launcher-panel-build-build.md" description="Launcher build" type="documents"/>
+        </spotlight>
+
+        <primary>
+            <title>Разделы</title>
+            <a href="launcher-panel-build-publish.md" description="Project description">Публикация новых версий</a>
+        </primary>
+
+        <secondary>
+            <title>Дополнительно</title>
+            <a href="profiles.md" description="Game profiles">Игровые профили</a>
+        </secondary>
+
+    </section-starting-page>
+
+</topic>

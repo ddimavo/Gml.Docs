@@ -2,4 +2,4 @@
 
 • [Установка из сходников](installation-launcher.md)
 
-• [Установка из панели](launcher-build-from-panel.md)
+• [Установка из панели](launcher-panel-build.topic)
