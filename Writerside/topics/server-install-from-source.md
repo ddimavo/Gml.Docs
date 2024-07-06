@@ -48,33 +48,44 @@ cd Gml.Backend
 UID=0
 GID=0
 
-SECURITY_KEY= # Секретный ключ (openssl rand -hex 32)
-PROJECT_NAME= # Наименование вашего проекта
-PROJECT_DESCRIPTION= # Описание проекта (Опционально)
-PROJECT_POLICYNAME= # Наименование политики, пример: (GamerVIILauncherPolicy)
-PROJECT_PATH= # Оставить пустым, если нет необходимости менять путь установки профилей на сервере
+SECURITY_KEY=643866c80c46c909332b30600d3265803a3807286d6eb7c0d2e164877c809519
+PROJECT_NAME=GmlBackendPanel
+PROJECT_DESCRIPTION=
+PROJECT_POLICYNAME=GmlServerPolicy
+PROJECT_PATH=
 
-S3_ENABLED=true # Включить подключение к S3
+  # Включить подключение к S3
+S3_ENABLED=true
+  # root пользователь панели управления
+MINIO_ROOT_USER=GamerVII
+  # root пароль панели управления
+MINIO_ROOT_PASSWORD=waefawegferyjerthdrthrtrdthdr
 
-MINIO_ROOT_USER= # root пользователь панели управления
-MINIO_ROOT_PASSWORD= # root пароль панели управления
-
-# Настройки внешнего доступа 
-# Порты, на которых будут работать приложения
-MINIO_ADDRESS=:5009 # адрес консоли (:5009 или 10.2.0.1:5009)
-MINIO_ADDRESS_PORT=5009 # Порт консоли (совпадает с записью выше)
-MINIO_CONSOLE_ADDRESS=:5010 # адрес панели (:5010 или 10.2.0.1:5010)
-MINIO_CONSOLE_ADDRESS_PORT=5010 # Порт (совпадает с записью выше)
-PORT_GML_BACKEND=5000         # Web Api
-PORT_GML_FRONTEND=5003        # Панель управления проектом
-PORT_GML_FILES=5005           # Файловый сервис
-PORT_GML_SKINS=5006           # Сервис скинов 
+  # Настройки внешнего доступа
+  # Порты, на которых будут работать приложения
+  # адрес консоли (:5009 или 10.2.0.1:5009)
+MINIO_ADDRESS=:5009
+  # Порт консоли (совпадает с записью выше)
+MINIO_ADDRESS_PORT=5009
+  # адрес панели (:5010 или 10.2.0.1:5010)
+MINIO_CONSOLE_ADDRESS=:5010
+  # Порт (совпадает с записью выше)
+MINIO_CONSOLE_ADDRESS_PORT=5010
+  # Web Api
+PORT_GML_BACKEND=5000
+  # Панель управления проектом
+PORT_GML_FRONTEND=5003
+  # Файловый сервис
+PORT_GML_FILES=5005
+  # Сервис скинов
+PORT_GML_SKINS=5006
 ```
 
 Отредактируйте или создайте файл `.env` в папке `src\Gml.Web.Client\.env`
 
 ```yaml
-NEXT_PUBLIC_BASE_URL=http://localhost:5000 # Адрес к Web Api
+ # Адрес к Web Api
+NEXT_PUBLIC_BASE_URL=http://localhost:5000
 NEXT_PUBLIC_PREFIX_API=api
 NEXT_PUBLIC_VERSION_API=v1
 ```
