@@ -48,4 +48,11 @@
             <toc-element topic="launcher-edit-components.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="servers.topic">
+        <toc-element topic="servers-minecraft-info.md"/>
+        <toc-element topic="server-requirements.md"/>
+        <toc-element topic="servers-minecraft-examples.md">
+            <toc-element topic="servers-minecraft-docker.md"/>
+        </toc-element>
+    </toc-element>
 </instance-profile>

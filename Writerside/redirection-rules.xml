@@ -35,4 +35,16 @@
         <description>Created after removal of "Сборка из панели" from Recloud Wiki</description>
         <accepts>launcher-build-from-panel.html</accepts>
     </rule>
+    <rule id="1bc0561d">
+        <description>Created after removal of "Настройка игровых серверов" from Recloud Wiki</description>
+        <accepts>servers.html</accepts>
+    </rule>
+    <rule id="71449334">
+        <description>Created after removal of "servers" from Recloud Wiki</description>
+        <accepts>servers.html</accepts>
+    </rule>
+    <rule id="50503163">
+        <description>Created after removal of "Обвязка сервера и лаунчера" from Recloud Wiki</description>
+        <accepts>server-connect-to-gml.html</accepts>
+    </rule>
 </rules>
