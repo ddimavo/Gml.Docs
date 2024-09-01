@@ -10,21 +10,21 @@
         <description>Этот раздел поможет вам развернуть серверную инфраструктуру Gml.</description>
 
         <spotlight>
-            <a href="server-install-home.topic" description="Gml.Backend" type="start"/>
-            <a href="requirements.md" description="System Requirement" type="documents"/>
+            <a href="server-install-home.topic" type="start"/>
+            <a href="requirements.md" type="documents"/>
         </spotlight>
 
         <primary>
             <title>Разделы</title>
-            <a href="getting-started.md" description="Project description">Описание проекта</a>
-            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+            <a href="getting-started.md">Описание проекта</a>
+            <a href="allowed-minecraft-versions.md">Поддерживаемые версии Minecraft</a>
         </primary>
 
         <secondary>
             <title>Интеграции</title>
-            <a href="profiles.md" description="Game profiles">Игровые профили</a>
-            <a href="integrations-auth.md" description="Auth">Авторизация</a>
-            <a href="minecraft-options.md" description="Auth">Опции запуска</a>
+            <a href="profiles.md">Игровые профили</a>
+            <a href="integrations-auth.md">Авторизация</a>
+            <a href="minecraft-options.md">Опции запуска</a>
         </secondary>
 
     </section-starting-page>

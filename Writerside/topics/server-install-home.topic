@@ -10,19 +10,19 @@
         <description>Установка на различные ОС</description>
 
         <spotlight>
-            <a href="server-install-from-script.md" description="Debian/Ubuntu installer" type="server"/>
-            <a href="server-install-from-script-windows.md" description="Windows installer" type="server"/>
+            <a href="server-install-from-script.md" type="server"/>
+            <a href="server-install-from-script-windows.md" type="server"/>
         </spotlight>
 
         <primary>
             <title>Прочие варианты установки</title>
-            <a href="server-install-from-source.md" description="Install from source code">Установка из исходников</a>
+            <a href="server-install-from-source.md">Установка из исходников</a>
         </primary>
 
         <secondary>
             <title>Дополнительная информация</title>
-            <a href="getting-started.md" description="Project description">Описание проекта</a>
-            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+            <a href="getting-started.md">Описание проекта</a>
+            <a href="allowed-minecraft-versions.md">Поддерживаемые версии Minecraft</a>
         </secondary>
 
     </section-starting-page>

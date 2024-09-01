@@ -106,6 +106,9 @@ docker compose up -d
 
 ## Инфраструктура
 
+> Внимание! Начиная с версии 0.1.0-rc1 файлы серверной части вынесены в директорию
+> установки [Подробнее](gml-backend-files.md)
+
 <procedure title="Сервеная инфраструктура" id="inject-a-procedure">
     <step>
         <p>
@@ -123,7 +126,7 @@ docker compose up -d
     </step>
     <step>
         <p>
-            <span>Web FileBrowser</span>
+            <span>Web FileBrowser (Удален с версии 0.1.0-rc1 <a href="https://discord.com/channels/585873186512437248/1238063781028823090/1279787369490288652">Описание</a>)</span>
             <a href="http://localhost:5005">http://localhost:5005</a>
             <br/>
             <code>логин и пароль по умолчанию: admin:admin</code>
