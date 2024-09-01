@@ -30,8 +30,8 @@
                     <toc-element topic="integrations-auth-custom.md"/>
                 </toc-element>
             </toc-element>
+            <toc-element topic="gml-backend-files.md"/>
         </toc-element>
-        <toc-element topic="gml-backend-files.md"/>
         <toc-element topic="gml-security.md">
             <toc-element topic="gml-security-easy.md"/>
         </toc-element>
