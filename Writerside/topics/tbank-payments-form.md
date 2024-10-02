@@ -39,7 +39,7 @@ var acquiringSdk = new AcquiringSdk(terminalKey, password, publicKey)
 };
 ```
 
-### 2. Формирование платежа
+### 2. Создание платежа {id="tbank-payment-init"}
 
 ```C#
 var paymentId = await acquiringSdk.Init(1000, Guid.NewGuid().ToString(), "RcPay-2024");
@@ -57,21 +57,3 @@ var paymentId = await acquiringSdk.Init(1000, Guid.NewGuid().ToString(), "RcPay-
 Идентификатор покупателя в системе Продавца. Если передается и Банком разрешена автоматическая привязка карт к
 терминалу,
 то для данного покупателя будет осуществлена привязка карты.
-
-### 3. Проведение платежа
-
-Подтверждает инициированный платеж передачей карточных данных.
-
-```C#
-/// 1 параметр. Уникальный идентификатор транзакции в системе Банка. (Полученный на прошлом этапе)
-/// 2 параметр. Параметр, который определяет отравлять email с квитанцией или нет.
-/// 3 параметр. Данные карты.
-/// 4 параметр. Email на который будет отправлена квитанция об оплате.
-
-var result = await _procedures.FinishAuthorize(paymentId, false, new DefaultCardData
-{
-    Pan = "0000000000000000", // Номер карты
-    ExpiryDate = "1230",      // Срок действия в формате MMYY
-    SecureCode = "111"        // CVV код
-}, "support@recloud.tech");   // Email (2 параметр)
-```

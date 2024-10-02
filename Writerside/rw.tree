@@ -63,6 +63,11 @@
     <toc-element topic="TBank-SDK.md">
         <toc-element topic="tbank-payment-settings.md"/>
         <toc-element topic="tbank-payments-start.md"/>
-        <toc-element topic="tbank-payments-form.md"/>
+        <toc-element topic="tbank-payments-form.md">
+            <toc-element topic="tbank-payments-card.md"/>
+            <toc-element topic="tbank-payments-tbank.md"/>
+            <toc-element topic="tbank-payments-fps.md"/>
+            <toc-element topic="tbank-payments-mir.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>

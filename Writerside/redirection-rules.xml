@@ -47,4 +47,8 @@
         <description>Created after removal of "Обвязка сервера и лаунчера" from Recloud Wiki</description>
         <accepts>server-connect-to-gml.html</accepts>
     </rule>
+    <rule id="79ba8cf4">
+        <description>Created after removal of "tbank-payments-card" from Recloud Wiki</description>
+        <accepts>tbank-payments-card.html</accepts>
+    </rule>
 </rules>
