@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic id="Section-Starting-Page"
+       title="TBank.SDK"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+
+    <section-starting-page>
+        <title>Recloud TBank.SDK</title>
+        <description>
+            В данном разделе вы найдёте введение в TBank SDK — неофициальную библиотеку для приёма платежей ТБанк.
+        </description>
+
+        <spotlight>
+            <a href="TBank-SDK.md" summary="Overview of TBank SDK" type="account">Обзор TBank SDK</a>
+            <a href="tbank-payments-start.md" summary="Getting started with TBank payments" type="search">Начало работы
+                с
+                платежами TBank</a>
+        </spotlight>
+
+        <primary>
+            <title>Начать</title>
+            <a href="tbank-payments-start.md"/>
+            <a href="tbank-payment-settings.md" summary="Payment settings configuration"/>
+            <a href="tbank-payments-form.md">Детали формы оплаты</a>
+            <a href="tbank-payments-form.md" summary="Forms to get started">Формы оплаты</a>
+        </primary>
+
+        <secondary>
+            <title>Исследовать расширенные функции</title>
+            <a href="tbank-payments-card.md"/>
+            <a href="tbank-payments-tbank.md" summary="Using TBank for payments"/>
+            <a href="tbank-payments-fps.md">Интеграция платежей СБП</a>
+            <a href="tbank-payments-mir.md" summary="MIR payment methods">Интеграция платежей MIR</a>
+        </secondary>
+
+        <misc>
+            <cards>
+                <title>Другие важные темы как широкие карточки</title>
+                <a href="tbank-payment-settings.md"/>
+                <a href="tbank-payments-start.md" summary="How to initiate payments"/>
+                <a href="tbank-payments-form.md">Полные детали формы</a>
+                <a href="tbank-payments-card.md" summary="Card payment methods">Платежи по картам</a>
+            </cards>
+
+            <cards narrow="true">
+                <title>Другие важные темы как узкие карточки</title>
+                <a href="tbank-payments-tbank.md"/>
+                <a href="tbank-payments-fps.md"/>
+                <a href="tbank-payments-mir.md" summary="Efficient MIR payment integration"/>
+                <a href="tbank-payment-settings.md">Настройка платежей</a>
+                <a href="tbank-payments-start.md">Руководство по настройке</a>
+                <a href="tbank-payments-form.md" summary="Form details and examples">Детали формы</a>
+            </cards>
+
+            <links>
+                <group>
+                    <title>Другие связанные темы в виде ссылок</title>
+                    <a href="tbank-payments-form.md"/>
+                    <a href="tbank-payments-card.md" summary="Detailed card payment guide"/>
+                    <a href="tbank-payments-tbank.md">Опции платежей TBank</a>
+                    <a href="tbank-payments-fps.md" summary="FPS payment details">Руководство по платежам СБП</a>
+                </group>
+                <group>
+                    <title>Две в строке</title>
+                    <a href="tbank-payments-mir.md"/>
+                    <a href="tbank-payment-settings.md" summary="Optimize your payment settings"/>
+                </group>
+            </links>
+
+            <links narrow="true">
+                <group>
+                    <title>Больше связанных тем</title>
+                    <a href="tbank-payments-tbank.md"/>
+                    <a href="tbank-payments-fps.md" summary="FPS integration details"/>
+                    <a href="tbank-payments-mir.md">Интеграция платежей MIR</a>
+                    <a href="tbank-payment-settings.md" summary="Easy payment configuration">Настройка платежей</a>
+                </group>
+                <group>
+                    <title>Три в строке</title>
+                    <a href="tbank-payments-card.md"/>
+                    <a href="tbank-payments-start.md"/>
+                    <a href="tbank-payments-form.md" summary="Comprehensive form guide">Руководство по
+                        форме</a>
+                    <a href="tbank-payments-fps.md">Платежи СБП</a>
+                </group>
+                <group>
+                    <title>Каждая группа узкая</title>
+                    <a href="tbank-payments-mir.md"/>
+                    <a href="tbank-payment-settings.md" summary="Improving payment configurations"/>
+                    <a href="tbank-payments-card.md">Методы оплаты картой</a>
+                    <a href="tbank-payments-start.md">Руководство по началу работы</a>
+                </group>
+            </links>
+        </misc>
+    </section-starting-page>
+
+</topic>
