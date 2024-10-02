@@ -10,20 +10,28 @@
         <description>Эти разделы помогут вам начать работу</description>
 
         <spotlight>
-            <a href="Gml-Backend.topic" description="Gml.Backend" type="server"/>
-            <a href="Gml-Launcher.md" description="Gml.Launcher" type="computer"/>
+            <a href="Gml-Backend.topic" summary="Gml.Backend" type="server"/>
+            <a href="Gml-Launcher.md" summary="Gml.Launcher" type="computer"/>
         </spotlight>
 
         <primary>
             <title>Разделы</title>
-            <a href="getting-started.md" description="Project description">Описание проекта</a>
-            <a href="allowed-minecraft-versions.md" description="Supported versions of Minecraft">Поддерживаемые версии Minecraft</a>
+            <a href="getting-started.md" summary="Project description">Описание проекта</a>
+            <a href="requirements.md" summary="Project requirements">Требования проекта</a>
+            <a href="allowed-minecraft-versions.md" summary="Supported versions of Minecraft">Поддерживаемые версии
+                Minecraft</a>
+            <a href="minecraft-options.md" summary="Minecraft options">Опции Minecraft</a>
         </primary>
 
         <secondary>
             <title>Дополнительная информация</title>
-            <a href="profiles.md" description="Game profiles">Игровые профили</a>
-            <a href="integrations-auth.md" description="Auth">Авторизация</a>
+            <a href="profiles.md" summary="Game profiles">Игровые профили</a>
+            <a href="profiles-create.md" summary="Create profiles">Создание профилей</a>
+            <a href="profiles-download.md" summary="Download profiles">Загрузка профилей</a>
+            <a href="profiles-add-files.md" summary="Add files to profiles">Добавление файлов к профилям</a>
+            <a href="profiles-build.md" summary="Build profiles">Сборка профилей</a>
+            <a href="integrations-auth.md" summary="Auth">Авторизация</a>
+            <a href="integrations-auth-custom.md" summary="Custom Auth">Пользовательская авторизация</a>
         </secondary>
 
     </section-starting-page>
