@@ -79,6 +79,9 @@ PORT_GML_FRONTEND=5003
 PORT_GML_FILES=5005
   # Сервис скинов
 PORT_GML_SKINS=5006
+
+  # Микросервисы:
+SERVICE_TEXTURE_ENDPOINT=http://gml-web-skins:8085
 ```
 
 Отредактируйте или создайте файл `.env` в папке `src\Gml.Web.Client\.env`
