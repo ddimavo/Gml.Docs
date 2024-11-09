@@ -5,7 +5,7 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Игровые сервера" id="servers">
     <section-starting-page>
-        <title>Игровые сервера</title>
+        <title>Сервера Minecraft</title>
         <description>Этот раздел поможет вам развернуть серверную инфраструктуру Gml.</description>
 
         <spotlight>
