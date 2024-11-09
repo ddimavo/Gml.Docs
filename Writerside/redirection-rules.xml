@@ -51,4 +51,20 @@
         <description>Created after removal of "tbank-payments-card" from Recloud Wiki</description>
         <accepts>tbank-payments-card.html</accepts>
     </rule>
+    <rule id="376d7287">
+        <description>Created after removal of "Установка" from Recloud Wiki</description>
+        <accepts>Установка.html</accepts>
+    </rule>
+    <rule id="77bdfaa1">
+        <description>Created after removal of "Дополнительная информация" from Recloud Wiki</description>
+        <accepts>additional-info.html</accepts>
+    </rule>
+    <rule id="44c50a69">
+        <description>Created after removal of "Начало работы" from Recloud Wiki</description>
+        <accepts>Gml-Installation.html</accepts>
+    </rule>
+    <rule id="3d1e2316">
+        <description>Created after removal of "Интеграции" from Recloud Wiki</description>
+        <accepts>Integrations.html</accepts>
+    </rule>
 </rules>
