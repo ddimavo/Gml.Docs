@@ -110,7 +110,7 @@ docker compose up -d
 ## Инфраструктура
 
 > Внимание! Начиная с версии 0.1.0-rc1 файлы серверной части вынесены в директорию
-> установки [Подробнее](gml-backend-files.md)
+> установки [Подробнее](profiles-add-files.md)
 
 <procedure title="Сервеная инфраструктура" id="inject-a-procedure">
     <step>

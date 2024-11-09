@@ -5,5 +5,3 @@
 [Загрузка профиля](profiles-download.md)
 
 [Добавление файлов в клиент](profiles-add-files.md)
-
-[Бекапирование](profiles-build.md)
