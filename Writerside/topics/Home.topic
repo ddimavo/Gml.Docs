@@ -28,7 +28,6 @@
             <a href="profiles-create.md">Создание профилей</a>
             <a href="profiles-download.md">Загрузка профилей</a>
             <a href="profiles-add-files.md">Добавление файлов к профилям</a>
-            <a href="profiles-build.md">Сборка профилей</a>
             <a href="integrations-auth.md"/>
             <a href="integrations-auth-custom.md">Пользовательская авторизация</a>
         </secondary>

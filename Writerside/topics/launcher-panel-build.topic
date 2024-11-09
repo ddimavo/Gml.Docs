@@ -10,18 +10,18 @@
         <description>Этот раздел поможет вам собрать лаунчер Gml.Launcher в самой панели</description>
 
         <spotlight>
-            <a href="launcher-panel-build-download.md" description="Launcher download" type="documents"/>
-            <a href="launcher-panel-build-build.md" description="Launcher build" type="documents"/>
+            <a href="launcher-panel-build-download.md" type="documents"/>
+            <a href="launcher-panel-build-build.md" type="documents"/>
         </spotlight>
 
         <primary>
             <title>Разделы</title>
-            <a href="launcher-panel-build-publish.md" description="Project description">Публикация новых версий</a>
+            <a href="launcher-panel-build-publish.md"/>
         </primary>
 
         <secondary>
             <title>Дополнительно</title>
-            <a href="profiles.md" description="Game profiles">Игровые профили</a>
+            <a href="profiles.md"/>
         </secondary>
 
     </section-starting-page>

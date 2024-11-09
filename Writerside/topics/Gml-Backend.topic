@@ -22,9 +22,9 @@
 
         <secondary>
             <title>Интеграции</title>
-            <a href="profiles.md">Игровые профили</a>
-            <a href="integrations-auth.md">Авторизация</a>
-            <a href="minecraft-options.md">Опции запуска</a>
+            <a href="profiles.md"/>
+            <a href="integrations-auth.md"/>
+            <a href="minecraft-options.md"/>
         </secondary>
 
     </section-starting-page>
