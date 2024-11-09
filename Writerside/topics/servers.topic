@@ -9,18 +9,18 @@
         <description>Этот раздел поможет вам развернуть серверную инфраструктуру Gml.</description>
 
         <spotlight>
-            <a href="servers-minecraft-info.md" description="Servers" type="server"/>
-            <a href="server-requirements.md" description="Servers Requirement" type="documents"/>
+            <a href="servers-minecraft-info.md" type="server"/>
+            <a href="server-requirements.md" type="documents"/>
         </spotlight>
 
         <primary>
             <title>Популярные ядра</title>
-            <a href="servers-minecraft-docker.md" description="Server | Docker">Запуск в Docker</a>
+            <a href="servers-minecraft-docker.md">Запуск в Docker</a>
         </primary>
 
         <secondary>
             <title>Прочие игровые ядра</title>
-            <a href="servers-minecraft-docker.md" description="Server | Docker">Запуск в Docker</a>
+            <a href="servers-minecraft-docker.md">Запуск в Docker</a>
         </secondary>
 
     </section-starting-page>
