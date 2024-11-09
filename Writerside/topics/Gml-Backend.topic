@@ -22,9 +22,9 @@
 
         <secondary>
             <title>Интеграции</title>
-            <a href="profiles.md"/>
-            <a href="integrations-auth.md"/>
-            <a href="minecraft-options.md"/>
+            <a href="profiles.md">Профили</a>
+            <a href="integrations-auth.md">Аутентификация</a>
+            <a href="minecraft-options.md">Настройки Minecraft</a>
         </secondary>
 
     </section-starting-page>
