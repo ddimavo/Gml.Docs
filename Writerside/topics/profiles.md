@@ -1,7 +1,7 @@
 # Игровые профили
 
-[Создание профиля](profiles-create.md)
+[](profiles-create.md)
 
-[Загрузка профиля](profiles-download.md)
+[](profiles-download.md)
 
-[Добавление файлов в клиент](profiles-add-files.md)
+[](profiles-add-files.md)

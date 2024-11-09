@@ -25,6 +25,7 @@
                         <toc-element topic="Работа-с-модами.md"/>
                     </toc-element>
                 </toc-element>
+                <toc-element topic="gml-white-lists.md"/>
                 <toc-element topic="integrations-auth.md">
                     <toc-element topic="integrations-auth-custom.md"/>
                 </toc-element>
@@ -56,6 +57,9 @@
         </toc-element>
         <toc-element topic="gml-security.md">
             <toc-element topic="gml-security-easy.md"/>
+        </toc-element>
+        <toc-element topic="gml-faq.md">
+            <toc-element topic="faq-details.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Section-Starting-Page.topic">
