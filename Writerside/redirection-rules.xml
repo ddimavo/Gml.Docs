@@ -67,4 +67,12 @@
         <description>Created after removal of "Интеграции" from Recloud Wiki</description>
         <accepts>Integrations.html</accepts>
     </rule>
+    <rule id="7b733844">
+        <description>Created after removal of "Управление файлами и директориями" from Recloud Wiki</description>
+        <accepts>gml-backend-files.html</accepts>
+    </rule>
+    <rule id="753b8636">
+        <description>Created after removal of "Бекапирование" from Recloud Wiki</description>
+        <accepts>profiles-build.html</accepts>
+    </rule>
 </rules>
