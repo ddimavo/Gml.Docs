@@ -17,7 +17,7 @@
         <primary>
             <title>Разделы</title>
             <a href="getting-started.md">Описание проекта</a>
-            <a href="allowed-minecraft-versions.md">Поддерживаемые версии Minecraft</a>
+            <a href="allowed-minecraft-versions.md"/>
         </primary>
 
         <secondary>
