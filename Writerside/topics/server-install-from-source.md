@@ -88,9 +88,7 @@ SERVICE_TEXTURE_ENDPOINT=http://gml-web-skins:8085
 
 ```yaml
  # Адрес к Web Api
-NEXT_PUBLIC_BASE_URL=http://localhost:5000
-NEXT_PUBLIC_PREFIX_API=api
-NEXT_PUBLIC_VERSION_API=v1
+ NEXT_PUBLIC_BACKEND_URL=http://localhost:5000/api/v1
 ```
 
 #### Шаг 5: Запуск проекта с использованием Docker
