@@ -12,7 +12,7 @@
     </tab>
     <tab title="Последняя актуальная">
       <code-block lang="bash">
-            git clone --recursive --branch dev https://github.com/GamerVII-NET/Gml.Launcher.git
+            git clone --recursive --branch develop https://github.com/GamerVII-NET/Gml.Launcher.git
       </code-block>
     </tab>
 </tabs>

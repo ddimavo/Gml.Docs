@@ -23,7 +23,7 @@
     <tab title="Последняя актуальная">
       <code-block lang="bash">
             git clone --recursive \
-                      --branch dev https://github.com/GamerVII-NET/Gml.Backend.git
+                      --branch develop https://github.com/GamerVII-NET/Gml.Backend.git
       </code-block>
     </tab>
 </tabs>
@@ -98,7 +98,7 @@ NEXT_PUBLIC_VERSION_API=v1
 Выполните следующую команду в вашем терминале:
 
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
 
 Пожалуйста, убедитесь, что Docker установлен и работает на вашем компьютере для выполнения этой команды.

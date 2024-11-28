@@ -19,7 +19,7 @@
         <tab title="JetBrains Rider (Платно)">
           <code-block lang="bash">
                 git clone --recursive \
-                          --branch dev https://github.com/GamerVII-NET/Gml.Backend.git
+                          --branch develop https://github.com/GamerVII-NET/Gml.Backend.git
           </code-block>
         </tab>
     </tabs>
