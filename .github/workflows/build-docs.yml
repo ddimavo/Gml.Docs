@@ -108,11 +108,11 @@ jobs:
           name: docs
 
       - name: List artifacts directory (publish step)
-        run: ls -l artifacts
+        run: ls -l dir
 
       - name: Unzip artifact
         run: |
-          unzip -O UTF-8 -qq "artifacts/${{ env.ALGOLIA_ARTIFACT }}" -d algolia-indexes
+          unzip -O UTF-8 -qq "dir/${{ env.ALGOLIA_ARTIFACT }}" -d algolia-indexes
 
       - name: Publish to Algolia Index
         run: |
