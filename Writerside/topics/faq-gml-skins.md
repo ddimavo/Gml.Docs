@@ -65,17 +65,15 @@ https://minecraft-inside.ru/skins/cloaks/{userName}.html?download
 <tabs>
 <tab title="Пример ссылки">
 Скины
-<code-block>
+<code-block lang="Text">
 https://mc.recloud.tech/cabient/skins/GamerVII.png
-</code-block>
-Плащи
+</code-block> Плащи
 <code-block>
 https://mc.recloud.tech/cabient/cloaks/GamerVII.png
 </code-block>
 </tab>
 <tab title="Пример ответа">
-<img src="faq-gml-skins-1.png" alt="Пример скина"/>
-По такому адресу мы будем получать реальную текстуру скина следующего вида
+<img src="faq-gml-skins-1.png" alt="Пример скина" /> По такому адресу мы будем получать реальную текстуру скина следующего вида
 </tab>
 </tabs>
 
