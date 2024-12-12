@@ -79,7 +79,10 @@ jobs:
         run: ls -l
 
       - name: Unzip artifact
-        run: unzip -O UTF-8 -qq "artifacts/${{ env.ARTIFACT }}" -d dir
+        run: unzip -O UTF-8 -qq "${{ env.ARTIFACT }}" -d dir
+
+      - name: List artifacts directory (deploy step)
+        run: ls -l dir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
