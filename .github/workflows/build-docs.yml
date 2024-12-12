@@ -108,7 +108,7 @@ jobs:
           name: docs
 
       - name: List artifacts directory (publish step)
-        run: ls -l dir
+        run: ls -l
 
       - name: Unzip artifact
         run: |
