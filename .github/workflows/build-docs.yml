@@ -76,7 +76,7 @@ jobs:
           name: docs
 
       - name: List artifacts directory (deploy step)
-        run: ls -l artifacts
+        run: ls -l
 
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq "artifacts/${{ env.ARTIFACT }}" -d dir
