@@ -119,7 +119,7 @@ jobs:
           echo "Checking contents of algolia-indexes:"
           ls -l algolia-indexes || (echo "Directory 'algolia-indexes' does not exist or is empty!" && exit 1)
 
-      - name: Publish to Algolia Index
+      - name: Publish to Algolia Index (Debug)
         run: |
           env algolia-key='${{env.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
           update-index \
@@ -128,4 +128,5 @@ jobs:
           --product '${{env.CONFIG_JSON_PRODUCT}}' \
           --version '${{env.CONFIG_JSON_VERSION}}' \
           --index-directory algolia-indexes/ \
+          --debug \
           2>&1 | tee algolia-update-index-log.txt
