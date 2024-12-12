@@ -59,6 +59,8 @@
                 <toc-element topic="server-requirements.md"/>
                 <toc-element topic="servers-minecraft-examples.md">
                     <toc-element topic="servers-minecraft-docker.md"/>
+                    <toc-element topic="server-minecraft-pterodactyl.md"/>
+                    <toc-element topic="server-minecraft-linux.md"/>
                 </toc-element>
             </toc-element>
         </toc-element>

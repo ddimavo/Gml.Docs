@@ -68,6 +68,17 @@ services:
 </tab>
 </tabs>
 
+> Важно!
+> Не оставляйте `localhost:5000`, если сервер будет использоваться другими игроками или развёрнут на удалённой машине!
+> В параметре `-javaagent` замените `https://localhost:5000/api/v1/integrations/authlib/minecraft` на адрес вашего API,
+> где развернута интеграция **authlib injector**.
+
+Если ваш сервер доступен по адресу `https://api.example.com`, то строка должна выглядеть следующим образом:
+
+```bash
+-javaagent:libraries/authlib-injector-1.2.5-alpha-1.jar=https://api.example.com/api/v1/integrations/authlib/minecraft -Dauthlibinjector.debug
+```
+
 ## 3. Загрузка библиотек
 Создайте папку ```data/libraries``` и загрузите туда [authlib injector ](https://github.com/Gml-Launcher/Gml.Authlib.Injector/releases/tag/authlib-injector-1.2.5-alpha-1)
 
