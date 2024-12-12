@@ -12,22 +12,47 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: 'Writerside/rw'
-  ARTIFACT: 'webHelpRW2-all.zip'
-  DOCKER_VERSION: '241.15989'
-  ALGOLIA_ARTIFACT: 'webHelpRW2-all.zip'
-  ALGOLIA_APP_NAME: 'S1V9Y61PCC'
-  ALGOLIA_INDEX_NAME: 'prod_WIKI'
-  ALGOLIA_KEY: '${{ secrets.ALGOLIA_KEY }}'
-  CONFIG_JSON_PRODUCT: 'RW'
-  CONFIG_JSON_VERSION: '1.0'
+  INSTANCE: "Writerside/rw"
+  ARTIFACT: "webHelpRW2-all.zip"
+  DOCKER_VERSION: "241.15989"
+  ALGOLIA_ARTIFACT: "webHelpRW2-all.zip"
+  ALGOLIA_APP_NAME: "S1V9Y61PCC"
+  ALGOLIA_INDEX_NAME: "prod_WIKI"
+  ALGOLIA_KEY: "${{ secrets.ALGOLIA_KEY }}"
+  CONFIG_JSON_PRODUCT: "RW"
+  CONFIG_JSON_VERSION: "1.0"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      algolia_artifact: ${{ steps.define-ids.outputs.algolia_artifact }}
+      artifact: ${{ steps.define-ids.outputs.artifact }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Define instance id and artifacts
+        id: define-ids
+        run: |
+          INSTANCE=${INSTANCE#*/}
+          INSTANCE_ID_UPPER=$(echo "$INSTANCE" | tr '[:lower:]' '[:upper:]')
+          ARTIFACT="webHelp${INSTANCE_ID_UPPER}2-all.zip"
+          ALGOLIA_ARTIFACT="algolia-indexes-${INSTANCE_ID_UPPER}.zip"
+
+          # Print the values
+          echo "INSTANCE_ID_UPPER: $INSTANCE_ID_UPPER"
+          echo "ARTIFACT: $ARTIFACT"
+          echo "ALGOLIA_ARTIFACT: $ALGOLIA_ARTIFACT"
+
+          # Set the environment variables and outputs
+          echo "INSTANCE_ID_UPPER=$INSTANCE_ID_UPPER" >> $GITHUB_ENV
+          echo "ARTIFACT=$ARTIFACT" >> $GITHUB_ENV
+          echo "ALGOLIA_ARTIFACT=$ALGOLIA_ARTIFACT" >> $GITHUB_ENV
+          echo "artifact=$ARTIFACT" >> $GITHUB_OUTPUT
+          echo "algolia_artifact=$ALGOLIA_ARTIFACT" >> $GITHUB_OUTPUT
 
       - name: Build docs using Writerside Docker builder
         uses: JetBrains/writerside-github-action@v4
@@ -43,6 +68,7 @@ jobs:
           path: |
             artifacts/${{ env.ARTIFACT }}
             artifacts/report.json
+            artifacts/${{ env.ALGOLIA_ARTIFACT }}
           retention-days: 7
 
   test:
@@ -54,9 +80,6 @@ jobs:
         with:
           name: docs
           path: artifacts
-
-      - name: List artifacts directory (test step)
-        run: ls -l
 
       - name: Test documentation
         uses: JetBrains/writerside-checker-action@v1
@@ -74,15 +97,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docs
-
-      - name: List artifacts directory (deploy step)
-        run: ls -l
+          path: artifacts
 
       - name: Unzip artifact
-        run: unzip -O UTF-8 -qq "${{ env.ARTIFACT }}" -d dir
-
-      - name: List artifacts directory (deploy step)
-        run: ls -l dir
+        run: unzip -O UTF-8 -qq "artifacts/${{ needs.build.outputs.artifact }}" -d dir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -107,8 +125,10 @@ jobs:
         with:
           name: docs
           path: artifacts
+
       - name: Unzip Algolia artifact
         run: unzip -O UTF-8 -qq "artifacts/${{ needs.build.outputs.algolia_artifact }}" -d algolia-indexes
+
       - name: Update Algolia Index
         run: |
           if [ -z "${{ secrets.ALGOLIA_KEY }}" ]; then
@@ -116,11 +136,11 @@ jobs:
             exit 1
           else
             env "algolia-key=${{ secrets.ALGOLIA_KEY }}" java -jar /opt/builder/help-publication-agent.jar \
-            update-index \
-            --application-name ${{ env.ALGOLIA_APP_NAME }} \
-            --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
-            --product ${{ env.CONFIG_JSON_PRODUCT }} \
-            --version ${{ env.CONFIG_JSON_VERSION }} \
-            --index-directory algolia-indexes/ \
-            2>&1 | tee algolia-update-index-log.txt
+              update-index \
+              --application-name ${{ env.ALGOLIA_APP_NAME }} \
+              --index-name ${{ env.ALGOLIA_INDEX_NAME }} \
+              --product ${{ env.CONFIG_JSON_PRODUCT }} \
+              --version ${{ env.CONFIG_JSON_VERSION }} \
+              --index-directory algolia-indexes/ \
+              2>&1 | tee algolia-update-index-log.txt
           fi
