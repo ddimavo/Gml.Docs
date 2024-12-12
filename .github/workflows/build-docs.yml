@@ -56,7 +56,7 @@ jobs:
           path: artifacts
 
       - name: List artifacts directory (test step)
-        run: ls -l artifacts
+        run: ls -l
 
       - name: Test documentation
         uses: JetBrains/writerside-checker-action@v1
