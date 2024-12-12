@@ -126,5 +126,6 @@ jobs:
           --application-name '${{env.ALGOLIA_APP_NAME}}' \
           --index-name '${{env.ALGOLIA_INDEX_NAME}}' \
           --product '${{env.CONFIG_JSON_PRODUCT}}' \
+          --productVersion '${{env.CONFIG_JSON_VERSION}}' \
           --index-directory algolia-indexes/
           2>&1 | tee algolia-update-index-log.txt
