@@ -10,8 +10,8 @@
 
 ### 3. Настройка authlib injector
 
-1.
-Скачайте [authlib-injector](https://github.com/Gml-Launcher/Gml.Authlib.Injector/releases/tag/authlib-injector-1.2.5-alpha-1)
+1. Скачайте
+   [authlib-injector](https://github.com/Gml-Launcher/Gml.Authlib.Injector/releases/tag/authlib-injector-1.2.5-alpha-1)-
 2. Поместите его в папку с сервером.
 
 ### 4. Запуск сервера
