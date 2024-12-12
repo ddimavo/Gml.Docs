@@ -6,11 +6,23 @@
         <algolia-id>S1V9Y61PCC</algolia-id>
         <algolia-index>prod_WIKI</algolia-index>
         <algolia-api-key>1914446cdea4f6cb0437e01d8bee6dd3</algolia-api-key>
+        <primary-color>frozen</primary-color>
+        <link-color>frozen</link-color>
+        <custom-favicons>gml.png</custom-favicons>
+        <header-logo>gml.png</header-logo>
+        <color-preset>soft</color-preset>
+        <download-title>Получить Gml Pro</download-title>
+        <download-page>https://recloud.tb.ru</download-page>
+        <showDownloadButton>true</showDownloadButton>
+
     </variables>
     <build-profile instance="rw">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
+    <footer>
+        <social type="blog" href="https://blog.recloud.tech/">Recloud</social>
+    </footer>
 
 </buildprofiles>
