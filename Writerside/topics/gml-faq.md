@@ -176,3 +176,30 @@ Minio может не работать из-за того, что у вас пр
 Вы видите примерно следующее
 
 Читайте документацию [по сборке через панель. ](launcher-panel-build-download.md#download)
+
+## Ошибка входа: Службы аутентификации отключены для проведения технических работ.
+
+### Решение
+
+Если у вас выбран метод авторизации Azuriom - выполните следующее:
+
+- Откройте файл ```/папка_с_сайтом/app/Games/Minecraft/MinecraftOfflineGame.php```, и найдите в нем следующий код:
+```
+public function getUserUniqueId(string $name): ?string
+    {
+        $factory = new UuidFactory();
+        $factory->setNameGenerator(new class implements NameGeneratorInterface
+        {
+            public function generate(UuidInterface $ns, string $name, string $hashAlgorithm): string
+            {
+                return md5($name, true);
+            }
+        });
+        $uuid = $factory->uuid3(Uuid::NIL, 'OfflinePlayer:'.$name)->toString();
+
+        return Str::remove('-', $uuid);
+    }
+```
+- Замените ```return Str::remove('-', $uuid);``` на ```return $uuid;```. <br>
+
+**ВНИМАНИЕ:** После этой процедуры необходимо пересоздать все уже имеющиеся аккаунты, чтобы сгенерировались новые и корректные UUID.
