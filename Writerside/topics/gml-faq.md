@@ -200,6 +200,6 @@ public function getUserUniqueId(string $name): ?string
         return Str::remove('-', $uuid);
     }
 ```
-- Замените ```return Str::remove('-', $uuid);``` на ```return $uuid;```. <br>
+- Замените ```return Str::remove('-', $uuid);``` на ```return $uuid;```.
 
 **ВНИМАНИЕ:** После этой процедуры необходимо пересоздать все уже имеющиеся аккаунты, чтобы сгенерировались новые и корректные UUID.
