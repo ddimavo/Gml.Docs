@@ -20,7 +20,7 @@
 
 #### Windows (start.bat)
 
-```plain text
+```bash
 @echo off
 java -Xmx4G -Xms4G -javaagent:authlib-injector-1.2.5-alpha-1.jar=https://localhost:5000/api/v1/integrations/authlib/minecraft -jar paper-1.20.4.jar nogui
 pause
